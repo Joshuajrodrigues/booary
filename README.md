@@ -1,13 +1,15 @@
 
 # Booary
 
+![Example image](https://joshuarodrigues.dev/content/booary/booaryv1.png)
+
 Booary is a web component designed to display a reading history in the style of a vintage library card. It uses a JSON file as a database and supports yearly archiving and friend cross-referencing.
 Usage
 
 ## Example
 
 [My library card](https://joshuarodrigues.dev/library)
-![Example image](https://joshuarodrigues.dev/content/booary/booaryv1.png)
+
 
 
 1. Installation
