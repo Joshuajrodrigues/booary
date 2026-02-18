@@ -1,0 +1,29 @@
+{
+  "borrower": "Joshua",
+  "library": {
+    "name": "Boo Library",
+    "signature": "🐾"
+  },
+  "books": [
+    {
+      "key": "/works/OL37949460W",
+      "name": "Intermezzo",
+      "finishedDate": "12/2/2026"
+    },
+    {
+      "key": "/works/OL893415W",
+      "name": "Dune",
+      "finishedDate": "12/2/2026"
+    },
+    {
+      "key": "/works/OL893516W",
+      "name": "Children of Dune",
+      "finishedDate": "12/2/2026"
+    },
+    {
+      "key": "/works/OL38648331W",
+      "name": "Quiet Place",
+      "finishedDate": "13/2/2026"
+    }
+  ]
+}

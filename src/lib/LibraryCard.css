@@ -1,0 +1,116 @@
+.card {
+    position: relative;
+    max-width: 384px;
+    border: 2px solid #1f2937;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    font-family:
+        ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.inner {
+    transform: rotate(-1deg);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #1f2937;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.year {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.libraryTitle {
+    font-size: 1.25rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-style: italic;
+    margin: 0;
+}
+
+.fieldGroup {
+    margin-bottom: 1rem;
+}
+
+.fieldValue {
+    margin: 0;
+    line-height: 1.2;
+}
+.nameValue {
+    font-size: 1.125rem;
+}
+.signatureValue {
+    font-size: 1.5rem;
+}
+
+.label {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #6b7280;
+    text-decoration: underline dotted;
+}
+
+.bookSection {
+    border-top: 2px solid #1f2937;
+    padding-top: 0.5rem;
+}
+
+.bookList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bookRow {
+    position: relative;
+    display: grid;
+    grid-template-cols: 1fr 1fr;
+    align-items: flex-end;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.bookName {
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 0.5rem;
+}
+
+.bookDate {
+    font-size: 10px;
+    text-align: right;
+    color: #9ca3af;
+    font-style: italic;
+}
+
+.friendSignatures {
+    position: absolute;
+    right: 16px;
+    display: flex;
+    top: -4px;
+}
+
+.signatureLink {
+    font-size: 1.125rem;
+    transition: transform 0.2s;
+    text-decoration: none;
+    color: inherit;
+}
+
+.signatureLink:hover {
+    transform: scale(1.25);
+    z-index: 10;
+}
