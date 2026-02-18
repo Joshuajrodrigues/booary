@@ -20,6 +20,7 @@ export default defineConfig([
     },
     format: ["iife"],
     minify: true,
+    injectStyle: true,
     splitting: false,
     sourcemap: false,
     clean: true,

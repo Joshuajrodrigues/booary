@@ -5,7 +5,7 @@ const friendsList = ["http://localhost:4321/library/card.json"];
 export function App() {
   return (
     <>
-      <LibraryCard cardlink={myLibrary} friends={friendsList} />
+      <LibraryCard cardlink={myLibrary} />
     </>
   );
 }

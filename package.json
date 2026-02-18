@@ -1,8 +1,13 @@
 {
   "name": "booary",
   "private": false,
-  "version": "1.0.0",
+  "version": "7.0.0",
   "type": "module",
+  "main": "./dist/index.global.js",
+  "unpkg": "./dist/index.global.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsup",

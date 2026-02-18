@@ -1,0 +1,69 @@
+Booary
+
+Booary is a web component designed to display a reading history in the style of a vintage library card. It uses a JSON file as a database and supports yearly archiving and friend cross-referencing.
+Usage
+1. Installation
+
+Include the library via CDN in your HTML or Astro project:
+HTML
+
+<script src="https://unpkg.com/booary"></script>
+
+2. Implementation
+
+Place the custom element in your code. It requires a link to your local data and can optionally accept an array of friend URLs.
+HTML
+
+<x-library-card 
+  cardlink="/library/card.json" 
+  friends='["https://friend-site.com/library/card.json"]'>
+</x-library-card>
+
+The CLI
+
+The package includes a command-line interface to manage your library without manual JSON editing.
+
+To run the CLI:
+Bash
+
+pnpm booary
+
+Functionality:
+
+    Initialization: Configures your borrower name and library name on the first run.
+
+    Book Search: Queries the Open Library API to find book details.
+
+    Automatic Archiving: New books are filed under the current year. If a year does not exist in your history, the CLI creates it.
+
+Features
+
+    Yearly Navigation: Toggle between different years using the navigation arrows to view historical reading data.
+
+    Social Discovery: If a friend in your list has read the same book in the same year, their librarian signature will appear next to that book on your card.
+
+    Encapsulated Design: Built as a standard Web Component that works across all modern browsers and frameworks.
+
+Data Structure
+
+The card.json file is organized by years to allow for historical browsing.
+JSON
+
+{
+  "borrower": "User Name",
+  "library": {
+    "name": "Library Name",
+    "signature": "JS"
+  },
+  "years": {
+    "2025": [
+      {
+        "key": "/works/OL12345W",
+        "name": "Book Title",
+        "author": "Author Name",
+        "finishedDate": "01/01/2025"
+      }
+    ],
+    "2026": []
+  }
+}
