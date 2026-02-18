@@ -5,28 +5,34 @@ Usage
 1. Installation
 
 Include the library via CDN in your HTML or Astro project:
-HTML
+
+```HTML
 
 <script src="https://unpkg.com/booary"></script>
+```
 
 2. Implementation
 
 Place the custom element in your code. It requires a link to your local data and can optionally accept an array of friend URLs.
-HTML
+
+```HTML
 
 <x-library-card 
   cardlink="/library/card.json" 
   friends='["https://friend-site.com/library/card.json"]'>
 </x-library-card>
+```
 
 The CLI
 
 The package includes a command-line interface to manage your library without manual JSON editing.
 
 To run the CLI:
-Bash
+
+```Bash
 
 pnpm booary
+```
 
 Functionality:
 
@@ -47,7 +53,7 @@ Features
 Data Structure
 
 The card.json file is organized by years to allow for historical browsing.
-JSON
+```JSON
 
 {
   "borrower": "User Name",
@@ -66,4 +72,6 @@ JSON
     ],
     "2026": []
   }
+
 }
+```
