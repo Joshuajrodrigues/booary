@@ -1,4 +1,4 @@
-Booary
+### Booary
 
 Booary is a web component designed to display a reading history in the style of a vintage library card. It uses a JSON file as a database and supports yearly archiving and friend cross-referencing.
 Usage
@@ -6,7 +6,7 @@ Usage
 
 Include the library via CDN in your HTML or Astro project:
 
-```HTML
+```
 
 <script src="https://unpkg.com/booary"></script>
 ```
@@ -15,7 +15,7 @@ Include the library via CDN in your HTML or Astro project:
 
 Place the custom element in your code. It requires a link to your local data and can optionally accept an array of friend URLs.
 
-```HTML
+```
 
 <x-library-card 
   cardlink="/library/card.json" 
