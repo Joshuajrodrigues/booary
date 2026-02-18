@@ -112,7 +112,7 @@ export const LibraryCard = ({
                     (fBook: any) => fBook.key === book.key,
                   ),
                 );
-
+                console.log("readersOfThisBook", readersOfThisBook);
                 return (
                   <li key={idx} className="bookRow">
                     <span
@@ -125,9 +125,11 @@ export const LibraryCard = ({
                       <span className="bookDate">{book.finishedDate}</span>
                       <div className="friendSignatures">
                         {readersOfThisBook.map((f, i) => (
-                          <span key={i} title={f.borrower} className="sig">
-                            {f.library.signature}
-                          </span>
+                          <a href={new URL(f.url).origin} target={"_blank"}>
+                            <span key={i} title={f.borrower} className="sig">
+                              {f.library.signature}
+                            </span>
+                          </a>
                         ))}
                       </div>
                     </div>

@@ -106,9 +106,10 @@
 
 .friendSignatures {
     position: absolute;
-    right: 16px;
+    right: 0px;
     display: flex;
-    top: -4px;
+    top: 18px;
+    cursor: pointer;
 }
 
 .signatureLink {
