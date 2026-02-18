@@ -115,7 +115,10 @@ export const LibraryCard = ({
 
                 return (
                   <li key={idx} className="bookRow">
-                    <span className="bookName">
+                    <span
+                      className="bookName"
+                      title={`${book.name} by ${book.author}`}
+                    >
                       {book.name} <small>by {book.author}</small>
                     </span>
                     <div className="bookMeta">

@@ -1,10 +1,13 @@
 {
   "name": "booary",
   "private": false,
-  "version": "7.0.0",
+  "version": "8.0.1",
   "type": "module",
   "main": "./dist/index.global.js",
   "unpkg": "./dist/index.global.js",
+  "bin": {
+    "booary": "./dist/cli.js"
+  },
   "files": [
     "dist"
   ],

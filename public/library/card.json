@@ -1,0 +1,17 @@
+{
+  "borrower": "joshua",
+  "library": {
+    "name": "Boo Library",
+    "signature": "🦉"
+  },
+  "years": {
+    "2026": [
+      {
+        "key": "/works/OL27448W",
+        "name": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "finishedDate": "18/2/2026"
+      }
+    ]
+  }
+}
