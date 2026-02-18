@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
-import "./LibraryCard.css";
+import { useState, useEffect } from "preact/hooks";
+import "./libraryCard.css";
+import register from "preact-custom-element";
 
 interface Book {
   key: string;
@@ -16,28 +17,31 @@ interface CardData {
 }
 
 interface Props {
-  cardUrl: string;
+  cardlink: string;
   friends?: string[]; // Array of URLs
 }
 
-export const LibraryCard = ({ cardUrl, friends = [] }: Props) => {
+export const LibraryCard = ({ cardlink, friends = [] }: Props) => {
   const [data, setData] = useState<CardData | null>(null);
   const [friendsData, setFriendsData] = useState<CardData[]>([]);
 
   useEffect(() => {
-    fetch(cardUrl)
+    const friendsArray =
+      typeof friends === "string" ? JSON.parse(friends) : friends;
+
+    fetch(cardlink)
       .then((res) => res.json())
       .then(setData);
-    if (friends.length > 0) {
+    if (Array.isArray(friendsArray) && friendsArray.length > 0) {
       Promise.all(
-        friends.map((url) =>
+        friendsArray.map((url) =>
           fetch(url)
             .then((res) => res.json())
             .then((json) => ({ ...json, url })),
         ),
       ).then(setFriendsData);
     }
-  }, [cardUrl, friends]);
+  }, [cardlink, friends]);
 
   if (!data) return <div className={"loading"}>Loading library card...</div>;
 
@@ -116,3 +120,6 @@ export const LibraryCard = ({ cardUrl, friends = [] }: Props) => {
     </div>
   );
 };
+register(LibraryCard, "x-library-card", ["cardlink", "friends"], {
+  shadow: false,
+});

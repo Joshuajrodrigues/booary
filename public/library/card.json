@@ -6,24 +6,16 @@
   },
   "books": [
     {
-      "key": "/works/OL37949460W",
-      "name": "Intermezzo",
-      "finishedDate": "12/2/2026"
+      "key": "/works/OL27448W",
+      "name": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "finishedDate": "18/2/2026"
     },
     {
-      "key": "/works/OL893415W",
-      "name": "Dune",
-      "finishedDate": "12/2/2026"
-    },
-    {
-      "key": "/works/OL893516W",
-      "name": "Children of Dune",
-      "finishedDate": "12/2/2026"
-    },
-    {
-      "key": "/works/OL38648331W",
-      "name": "Quiet Place",
-      "finishedDate": "13/2/2026"
+      "key": "/works/OL266178W",
+      "name": "Het Achterhuis",
+      "author": "Anne Frank",
+      "finishedDate": "18/2/2026"
     }
   ]
 }
